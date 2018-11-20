@@ -1,0 +1,20 @@
+➜  article-redis ./article-redis fill
+M226 <nil>
+C730 <nil>
+D937 <nil>
+R694 <nil>
+H68 <nil>
+Z922 <nil>
+C389 <nil>
+D544 <nil>
+➜  article-redis ./article-redis show H68
+{Title:CSP Author:Hoare}
+➜  article-redis ./article-redis rate H68 georg 3.2
+➜  article-redis ./article-redis rate Z922 georg 5
+➜  article-redis ./article-redis best 4
+Z922 5.00
+H68 3.20
+➜  article-redis ./article-redis rate Z922 tom 1
+➜  article-redis ./article-redis best 4
+H68 3.20
+Z922 3.00
