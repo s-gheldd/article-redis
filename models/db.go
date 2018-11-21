@@ -19,7 +19,7 @@ var Client *redis.Client
 // afterwards. This function panics if no connection can be established.
 func ConnectRedis(addr string) {
 	Client = redis.NewClient(&redis.Options{
-		Addr:     "localhost:6379",
+		Addr:     addr,
 		Password: "", // no password set
 		DB:       0,  // use default DB
 	})
